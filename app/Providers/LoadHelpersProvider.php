@@ -11,6 +11,7 @@ class LoadHelpersProvider extends ServiceProvider
      */
     public function register(): void
     {
+        dd(1);
         foreach (glob(app_path().'/Helpers/*.php') as $filename) {
             require_once($filename);
         }
